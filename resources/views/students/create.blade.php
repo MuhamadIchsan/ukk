@@ -11,11 +11,11 @@
             @csrf
                 <div class="col">
                     <label for="">Input NIS</label>
-                    <input type="text" class="form-control" name="nis">
+                    <input id="nis" type="text" class="form-control" name="nis">
                 </div>
                 <div class="col">
                     <label for="">Input nama</label>
-                    <input type="text" class="form-control" name="nama">
+                    <input id="nama" type="text" class="form-control" name="nama">
                 </div>
                 <div class="col">
                     <label for="">Input jk</label>
@@ -26,23 +26,23 @@
                 </div>
                 <div class="col">
                     <label for="">Input ttl</label>
-                    <input type="date" class="form-control" name="ttl">
+                    <input id="ttl" type="date" class="form-control" name="ttl">
                 </div>
                 <div class="col">
                     <label for="">Input alamat</label>
-                    <input type="text" class="form-control" name="alamat">
+                    <input id="alamat" type="text" class="form-control" name="alamat">
                 </div>
                 <div class="col">
                     <label for="">Input asal_sekolah</label>
-                    <input type="text" class="form-control" name="asal_sekolah">
+                    <input id="asal_sekolah" type="text" class="form-control" name="asal_sekolah">
                 </div>
                 <div class="col">
                     <label for="">Input kelas</label>
-                    <input type="text" class="form-control" name="kelas">
+                    <input id="kelas" type="text" class="form-control" name="kelas">
                 </div>
                 <div class="col">
                     <label for="">Input jurusan</label>
-                    <select name="jurusan" class="form-control">
+                    <select id="jurusan" name="jurusan" class="form-control">
                         <option value="OTKP">OTKP</option>                        
                         <option value="RPL">RPL</option>                        
                         <option value="BDP">BDP</option>                        
@@ -52,9 +52,10 @@
                         <option value="HTL">HTL</option>                        
                     </select>
                 </div>
-                <button class="btn btn-success">selesai</button>
-            </form>
+                <button class="btn btn-success my-2">selesai</button>                                
+            </form>            
             </div>
+            <button class="btn btn-success my-2" onclick="clearForm()">clear</button>
         </div>
     </div>
 </div>
